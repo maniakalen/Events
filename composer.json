@@ -1,5 +1,5 @@
 {
-  "name": "System/Events",
+  "name": "system/events",
   "description": "Events system for events dispatch control",
   "keywords": [
     "PHP"
