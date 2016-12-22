@@ -8,4 +8,4 @@ PHP System Event engine
     }
   ]
   </pre>
-  and "System/Events" : "*@dev" in your require
+  and "System/Events" : "1.0.0" in your require
