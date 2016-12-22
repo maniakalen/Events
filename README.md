@@ -8,4 +8,8 @@ PHP System Event engine
     }
   ]
   </pre>
-  and "System/Events" : "1.0.0" in your require
+  and 
+  <pre>
+  "System/Events" : "1.0.0"
+  </pre>
+  in your require
