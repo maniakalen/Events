@@ -4,13 +4,13 @@
   "keywords": [
     "PHP"
   ],
+  "license": "Open Software License (OSL 3.0)",
   "type": "library",
   "authors": [
     {
       "name": "Petar Ivanov"
     }
   ],
-  "version" : "1.0.0",
   "minimum-stability": "stable",
   "require": {
     "php": ">=5.4.0"
