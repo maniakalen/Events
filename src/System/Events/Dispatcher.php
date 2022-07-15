@@ -37,10 +37,10 @@ abstract class Dispatcher
             $event->sender = $this;
         }
         foreach ($this->events[$eventName] as $handlers) {
-            if (!isset($handlers[0]) || !is_callable($handlers[0])) {
+            if (!isset($handlers) || !is_callable($handlers)) {
                 continue;
             }
-            call_user_func($handlers[0], $event);
+            call_user_func($handlers, $event);
             if ($event->isAborted()) {
                 break;
             }
@@ -77,7 +77,7 @@ abstract class Dispatcher
         } else {
             $removed = false;
             foreach ($this->events[$eventName] as $i => $event) {
-                if ($event[0] === $handler) {
+                if ($event === $handler) {
                     unset($this->events[$eventName][$i]);
                     $removed = true;
                 }
