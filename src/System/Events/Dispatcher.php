@@ -14,7 +14,7 @@ namespace System\Events;
  * @license  http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @link     none
  */
-abstract class Dispatcher
+abstract class Dispatcher implements IDispatcher
 {
     protected $events = array();
 
@@ -22,10 +22,10 @@ abstract class Dispatcher
      * Triggers events for a given object
      *
      * @param string $eventName
-     * @param Event|null $event
+     * @param IEvent|null $event
      * @return null|boolean
      */
-    final public function trigger($eventName, Event $event = null)
+    final public function trigger($eventName, IEvent $event = null)
     {
         if (!isset($this->events[$eventName])) {
             return null;
