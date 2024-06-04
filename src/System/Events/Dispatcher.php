@@ -10,7 +10,7 @@ namespace System\Events;
  *
  * @category System
  * @package  Events
- * @author   peter.georgiev <peter.georgiev@concatel.com>
+ * @author   peter.georgiev <maniakalen@gmail.com>
  * @license  http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @link     none
  */
